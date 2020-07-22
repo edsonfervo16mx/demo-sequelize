@@ -14,7 +14,8 @@ module.exports = {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true
-      }
+      },
+      name: Sequelize.STRING
     })
   },
 
@@ -25,5 +26,7 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
+
+    await queryInterface.dropTable('images');
   }
 };
